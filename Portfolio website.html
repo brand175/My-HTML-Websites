@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Brandon's Portfolio</title>
+<link href='https://fonts.googleapis.com/css?family=Luckiest Guy' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Bowlby One SC' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Trade Winds' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Slackey' rel='stylesheet'>
+<style>
+
+/* CSS Stuff */
+
+
+/* note  to fix background you must set width on texts to same size */
+
+
+body {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    }
+
+
+#website-header {
+    width: 1000px;
+    height: 100px;
+    margin: 0px;
+    border-radius: 15px;
+    position: relative;
+    background: linear-gradient(yellow, green);
+    font-family: Monospace;
+    font-size: 25px;
+    }
+   
+
+#website-header h1 {
+    width: 1000px;
+    margin: 0px;
+    padding: 15px 0px 0px 150px;
+    }
+ 
+
+#box1 {
+    background: #8fcbd6;
+    border-radius: 15px;
+    border: solid 15px #FFFFFF;
+    margin: -990px;
+    width: 970px;
+    height: 1350px;
+    margin-left: 0px;
+    }
+    
+    
+#box1 img{
+    display: block;
+    border-radius: 600px;
+    border: 15px solid #4286f4;
+    border-width: 10px;
+    width: 300px;
+    height: 300px;
+    margin-left: 20px;
+    margin-top: 65px;
+    }
+ 
+ 
+#box1 p {
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Bowlby One SC';
+    width: 550px;
+    padding: 800px 0px 0px 190px;
+    }
+
+
+#info {
+    font-size: 25px;
+    color: black;
+    width: 500px;
+    padding-left: 470px;
+    width: 400px;
+    }
+
+
+#about {
+    margin: 0px;
+    height: 10px;
+    width: 320px;
+    padding: 40px 0px 105px 570px;
+    }
+
+
+#about p {
+    color: #ad2424;
+    font-size: 50px;
+    font-family: impact;
+    }
+   
+
+.image {
+    display: block;
+    position: relative;
+    border-radius: 600px;
+    border: 15px solid #4286f4;
+    border-width: 10px;
+    width: 125px;
+    height: 75%;
+    }
+
+
+#image2 {
+    margin: 0px;
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    }
+    
+
+#image3 {
+    margin: 0px;
+    border-radius: 600px;
+    height: 40px;
+    width: 70px;
+    position: relative;
+    }
+    
+    
+#image4 {
+    margin: 0px;
+    border-radius: 600px;
+    height: 40px;
+    width: 70px;
+    position: relative;
+    }
+
+
+#image5 {
+    margin: 0px;
+    border-radius: 600px;
+    height: 40px;
+    width: 70px;
+    position: relative;
+    }
+
+
+#image6 {
+    display: block;
+    border-radius: 10px;
+    border: 15px solid #4286f4;
+    border-width: 10px;
+    bottom: 150px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    }
+
+
+#image7 {
+    display: block;
+    border-radius: 600px;
+    border: 15px solid #4286f4;
+    border-width: 10px;
+    width: 125px;
+    height: 125px;
+    bottom: 130px;
+    left: -56px;
+    position: relative;
+    }
+    
+    
+.image8 { 
+    margin: 90px;
+    width: 300px;
+    height: 450px;
+    bottom: -60px;
+    left: -50px;
+    position: relative;
+    }
+
+
+.overlay { /* problem for inaccurite hovering thingy */
+    margin: 0px;
+    border-radius: 600px;
+    position: absolute;
+    bottom: 0px;
+    left: 44px;
+    right: 0px;
+    top: 309px;
+    height: 302px;
+    width: 302px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+    }
+
+
+.overlay2 {
+    margin: 0px;
+    border-radius: 600px;
+    position: relative;
+    bottom: 0px;
+    left: 113px;
+    right: 0px;
+    top: -810px;
+    height: 125px;
+    width: 125px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #3fba47;
+    }
+    
+    
+.overlay3 {
+    margin: 30px;
+    position: relative;
+    bottom: 0px;
+    left: 10px;
+    right: 0px;
+    top: -517px;
+    height: 451px;
+    width: 300px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: none;
+    }
+
+
+.overlay3 video {
+    margin: 0px;
+    position: relative;
+    bottom: 0px;
+    left: 320px;
+    right: 0px;
+    top: 96px;
+    height: 340px;
+    width: 600px;
+    opacity: 1;
+    transition: .5s ease;
+    background-color: none;
+    }
+
+
+.overlay4 {
+    margin: 0px;
+    position: relative;
+    bottom: 0px;
+    left: 465px;
+    right: 0px;
+    top: -351px;
+    height: 0px;
+    width: 0px;
+    opacity: 1;
+    transition: .5s ease;
+    background-color: green;
+    }
+
+
+.overlay:hover {
+    margin: 0px;
+    opacity: 0.85;
+    width: 302px;   /* extends length of box when hovered */
+    }
+
+
+.overlay2:hover {
+    margin: 0px;
+    opacity: 0.85;
+    width: 125px;   /* extends length of box when hovered */
+    }
+    
+    
+.overlay3:hover { /* can fix overlay issue */
+    margin: 30px;
+    opacity: 1;
+    left: 10px;
+    top: -516px;
+    width: 300px;   /* extends length of box when hovered */
+    }
+
+
+video:hover {
+    margin: 0px;
+    opacity: 0.65;
+    width: 600px;   /* extends length of box when hovered */
+    }
+
+
+.text {
+    width: 500px;
+    margin: 0px;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    bottom: 0px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: fantasy;
+    }
+    
+
+.text2 {
+    margin: 0px;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: 230px;
+    left: 0px;
+    right: 350px;
+    bottom: 0px;
+    -webkit-transform: translate(160px, -100px);
+    width: 150px;
+    }
+
+    
+nav {
+    padding-top: 20px;
+    }
+
+
+nav a {
+    text-decoration: none;
+    color: green;
+    display: block;
+    }
+
+
+nav a:hover{
+    margin: 0px;
+    width: 150px;
+    background: white;
+    color: black;
+    }
+
+
+li {
+    width: 150px;
+    height: 25px;
+    list-style-type: none;
+    }
+
+
+#contacts {
+    height: 40px;
+    width: 230px;
+    padding-left: 180px;
+    padding-bottom: 300px;
+    }
+
+
+#contacts p{
+    margin: 0px;
+    color: mediumseagreen;
+    background: -webkit-linear-gradient(bottom, #daef15, #FFDDFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 400px;
+    font-size: 72px;
+    font-family: 'Slackey';
+    padding-left: 120px;
+    }
+
+
+#box2 {
+    background: #8fcbd6;
+    border-radius: 15px;
+    border: solid 15px #FFFFFF;
+    margin-top: -230px;
+    width: 500px;
+    height: 230px;   
+    margin-left: 170px;
+    padding-left: 100px;
+    }
+
+
+#box2 p{
+    width: 500px;
+    height: 20px;   
+    padding-left: 5px;
+    font-family: Luckiest Guy;
+    }
+
+    
+
+.column {
+    margin: 0px;
+    padding: 5px;
+    padding-left: 25px;
+    width: 220px;
+    float: left;
+    height: 100px;
+    }
+
+
+.row {
+    margin: 0px;
+    padding-left: 0px;
+    width: -1px;
+    height: 0px;
+    }
+    
+    
+table {
+    border: 5px solid black;
+    position: relative;
+    margin-left: 360px;
+    margin-top: 0px;
+    width: 600px;
+    text-align: center;
+    }
+
+
+th {   /* Must be the same or equal to td or fail  */
+    border: 5px solid black;
+    position: relative;
+    } 
+
+td {
+    border: 5px solid black;
+    position: relative;
+    font-size: 20px;
+    }
+    
+    
+#game h1 {
+   padding-left: 496px;
+   padding-top: 80px;
+   padding-bottom: 20px;
+   width: 500px;
+   font-family: 'Trade Winds';
+   }
+
+    </style>
+    </head>
+
+<body background="Images/space2.jpg">
+
+
+<div id="website-header">
+    <h1>Welcome to my Portfolio</h1>
+</div>
+
+   
+<nav>
+    <li><a href="HTML Practice/index.html"/a>My Other Website</li></a>
+    <li><a href="http://www.willcobb.me"</a>Will Cobb's Website</li></a>
+    <li><a href="https://twitter.com/miniroo321?lang=en"</a>Will's Twitter Page</li></a>
+    </nav>
+
+
+<div id="about">
+    <p>About Me</p>
+</div>
+    
+
+<div id="info">
+    <p>My name is Brandon. I've been inspired by one of William L Cobb's work. Since he hasn't been active on updating the project in a very long time. I decided to fix it up myself and I managed to fix some minor stuff to make it more playable. During my free time I like to work on GC4iOS and play it on my devices</p>
+</div>
+
+<div id="game">
+<h1>My Favourite Games</h1>
+</div>
+
+<table>    
+<tr>
+<td width="10">Platform</td>
+<td width="160">Game</td>
+<td width="200">Description</td>
+</tr>
+
+<tr>
+<td>Wii</td>
+<td>Metroid Prime 3</td>
+<td>This is the best metroid prime game. One of the better controlled prime games compared to the GameCube</td>
+</tr>
+
+<tr>
+<td>GameCube</td>
+<td>007 Nightfire</td>
+<td>Multiplayer is great but the campaign is a bit meh</td>
+</tr>
+
+<tr>
+<td>PC</td>
+<td>Far Cry: Original</td>
+<td>It's a good game</td>
+</tr>
+
+<tr>
+<td>Xbox 360</td>
+<td>Guitar Hero III: LOR</td>
+<td>Have fun beating Through The Fire and The Flames on expert</td>
+</tr>
+
+<tr>
+<td>PS2</td>
+<td>Medal of Honor: Frontline</td>
+<td>Good music. Can be hard if difficulty is maxed</td>
+</tr>
+
+</table>
+
+
+<div id="box1">
+    <img src="Images/brand175.jpg" alt="brand175's Avatar" class="image" algin="basline"><p>Check out Will Cobb's projects</p>
+</div>
+</div>
+
+<img src="Images/james bond.jpg" alt="Pierce Brosnan" class="image8">
+</div>
+
+<div class="overlay3">
+    <video controls autoplay loop muted>
+<source src="Images/Corruptions Preview Trailer.mp4" type="video/mp4">
+    </video>
+</div>     
+    
+<div class="overlay">
+    <div class="text">My Github Page<a href="https://github.com/brand175"><br></br><img div id="image2" src="Images/brand175.jpg" alt="brand175's Avatar"/a>
+</div>
+    </div>
+    </div>
+
+<div class="overlay4">
+<a href="https://github.com/WilliamLCobb">
+    <img src="Images/will_cobb.jpg" alt="William L.Cobb's Avatar" div id="image7">
+</a>
+</div>
+</div>
+   
+    
+</style>
+</head>
+</body>
+
+
+<body>
+
+<div id="contacts">
+    <p>Contacts</p>
+</div>
+
+
+<div id="box2">
+    <div class="row">
+    <div class="column">
+    <p>Google</p><a href="Ha ha never"><img div id="image3" src="Images/googleplus.jpg" alt="Google Link" style="width:100"></a>
+</div>
+    
+<div class="column">
+    <p>Youtube</p><a href="https://www.youtube.com/channel/UCW9DhxLWa6knAcEsZq-2vkw"><img div id="image4" src="Images/youtube.png" alt="Youtube Link" style="width:100"></a>
+</div>
+    
+<div class="column">
+    <p>Twitter</p><a href="https://twitter.com/brand175"><img div id="image5" src="Images/twitter.png" alt="Twitter Link" style="width:100"></a>
+</div>
+    
+    </div>
+    </div>
+    </div>
+
+</body>
+</html>
