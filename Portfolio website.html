@@ -11,9 +11,8 @@
 
 /* CSS Stuff */
 
-
-/* note  to fix background you must set width on texts to same size */
-
+/* note  to fix background you must set width on texts to same size. Margin/pad issue most likely */
+/* note  display block can screw up images with links causing them to be clickable by width */
 
 body {
     background-repeat: no-repeat;
@@ -25,7 +24,7 @@ body {
 #website-header {
     width: 1000px;
     height: 100px;
-    margin: 0px;
+    margin-left: 27px;
     border-radius: 15px;
     position: relative;
     background: linear-gradient(yellow, green);
@@ -35,20 +34,20 @@ body {
    
 
 #website-header h1 {
-    width: 1000px;
+    width: 800px;
     margin: 0px;
-    padding: 15px 0px 0px 150px;
+    padding: 15px 0px 0px 152px;
     }
  
 
 #box1 {
-    background: #8fcbd6;
+    background: #4bd9fc;
     border-radius: 15px;
     border: solid 15px #FFFFFF;
     margin: -990px;
     width: 970px;
     height: 1350px;
-    margin-left: 0px;
+    margin-left: 27px;
     }
     
     
@@ -69,11 +68,12 @@ body {
     font-size: 35px;
     font-family: 'Bowlby One SC';
     width: 550px;
-    padding: 800px 0px 0px 190px;
+    padding: 800px 0px 0px 200px;
     }
 
 
 #info {
+    margin-left: 27px;
     font-size: 25px;
     color: black;
     width: 500px;
@@ -83,7 +83,7 @@ body {
 
 
 #about {
-    margin: 0px;
+    margin-left: 27px;
     height: 10px;
     width: 320px;
     padding: 40px 0px 105px 570px;
@@ -97,18 +97,18 @@ body {
     }
    
 
-.image {
+.image {             /* brand175's Avatar */
     display: block;
     position: relative;
     border-radius: 600px;
     border: 15px solid #4286f4;
     border-width: 10px;
     width: 125px;
-    height: 75%;
+    height: 125px;
     }
 
 
-#image2 {
+#image2 {            /* Github Avatar for brand175 */
     margin: 0px;
     border-radius: 10px;
     height: 100px;
@@ -117,8 +117,8 @@ body {
     }
     
 
-#image3 {
-    margin: 0px;
+#image3 {            /* Google Plus photo */
+    margin-left: 89px;
     border-radius: 600px;
     height: 40px;
     width: 70px;
@@ -126,8 +126,8 @@ body {
     }
     
     
-#image4 {
-    margin: 0px;
+#image4 {            /* Youtube photo */
+    margin-left: 89px;
     border-radius: 600px;
     height: 40px;
     width: 70px;
@@ -135,8 +135,8 @@ body {
     }
 
 
-#image5 {
-    margin: 0px;
+#image5 {            /* Twitter photo */
+    margin-left: 89px;
     border-radius: 600px;
     height: 40px;
     width: 70px;
@@ -156,37 +156,37 @@ body {
     }
 
 
-#image7 {
+#image7 {            /* Will Cobb's photo */
     display: block;
     border-radius: 600px;
     border: 15px solid #4286f4;
     border-width: 10px;
     width: 125px;
     height: 125px;
-    bottom: 130px;
-    left: -56px;
+    bottom: 375px;
+    left: -25px;
     position: relative;
     }
     
     
-.image8 { 
+.image8 {             /* James Bond photo */
     margin: 90px;
     width: 300px;
     height: 450px;
     bottom: -60px;
-    left: -50px;
+    left: -25px;
     position: relative;
     }
 
 
-.overlay { /* problem for inaccurite hovering thingy */
+.overlay {            /* Overlay for brand175's Avatar */
     margin: 0px;
     border-radius: 600px;
-    position: absolute;
+    position: relative;
     bottom: 0px;
-    left: 44px;
+    left: 71px;
     right: 0px;
-    top: 300px;
+    top: -1386px;
     height: 302px;
     width: 302px;
     opacity: 0;
@@ -211,13 +211,13 @@ body {
     }
     
     
-.overlay3 {
-    margin: 30px;
+.overlay3 {             /* Overlay for James Bond */
+    margin: 0px;
     position: relative;
     bottom: 0px;
-    left: 10px;
+    left: 65px;
     right: 0px;
-    top: -517px;
+    top: -484px;
     height: 451px;
     width: 300px;
     opacity: 0;
@@ -226,14 +226,14 @@ body {
     }
 
 
-.overlay3 video {
+.overlay3 video {       /* Overlay for Corruption Video. I would prefer not to have one. But it is needed to enable Audio */
     margin: 0px;
     position: relative;
     bottom: 0px;
-    left: 320px;
+    left: 322px;
     right: 0px;
     top: 96px;
-    height: 340px;
+    height: 330px;
     width: 600px;
     opacity: 1;
     transition: .5s ease;
@@ -241,7 +241,7 @@ body {
     }
 
 
-.overlay4 {
+.overlay4 {             /* This Overlay is to prevent the link from Will Cobbs photo from leaking below contacts. This is hidden behind Will Cobbs photo. Temp Fix? */
     margin: 0px;
     position: relative;
     bottom: 0px;
@@ -259,30 +259,30 @@ body {
 .overlay:hover {
     margin: 0px;
     opacity: 0.85;
-    width: 302px;   /* extends length of box when hovered */
+    width: 302px;   
     }
 
 
 .overlay2:hover {
     margin: 0px;
     opacity: 0.85;
-    width: 125px;   /* extends length of box when hovered */
+    width: 125px;   
     }
     
     
-.overlay3:hover { /* can fix overlay issue */
-    margin: 30px;
+.overlay3:hover {
+    margin: 0px;
     opacity: 1;
-    left: 10px;
-    top: -516px;
-    width: 300px;   /* extends length of box when hovered */
+    left: 65px;
+    top: -484px;
+    width: 300px;   
     }
 
 
 video:hover {
     margin: 0px;
     opacity: 0.65;
-    width: 600px;   /* extends length of box when hovered */
+    width: 600px;   
     }
 
 
@@ -330,12 +330,13 @@ nav a {
 nav a:hover{
     margin: 0px;
     width: 150px;
-    background: white;
-    color: black;
+    color: white;
+    font-size: 18px;
     }
 
 
 li {
+    margin-left: 27px;
     width: 150px;
     height: 25px;
     list-style-type: none;
@@ -345,13 +346,13 @@ li {
 #contacts {
     height: 40px;
     width: 230px;
-    padding-left: 180px;
+    margin-left: 185px;
     padding-bottom: 300px;
     }
 
 
 #contacts p{
-    margin: 0px;
+    margin-top: -200px;
     color: mediumseagreen;
     background: -webkit-linear-gradient(bottom, #daef15, #FFDDFF);
     -webkit-background-clip: text;
@@ -359,26 +360,27 @@ li {
     width: 400px;
     font-size: 72px;
     font-family: 'Slackey';
-    padding-left: 120px;
+    padding-left: 140px;
     }
 
 
 #box2 {
-    background: #8fcbd6;
+    background: #4bd9fc;
     border-radius: 15px;
     border: solid 15px #FFFFFF;
-    margin-top: -230px;
+    margin-top: -200px;
     width: 500px;
     height: 230px;   
-    margin-left: 170px;
-    padding-left: 100px;
+    margin-left: 255px;
+    padding-left: 0px;
     }
 
 
-#box2 p{
-    width: 500px;
+#box2 p {
+    width: 250px;
     height: 20px;   
-    padding-left: 5px;
+    text-align: center;
+    margin-left: 0px;
     font-family: Luckiest Guy;
     }
 
@@ -387,15 +389,15 @@ li {
 .column {
     margin: 0px;
     padding: 5px;
-    padding-left: 25px;
-    width: 220px;
+    padding-left: 0px;
+    width: 245px;
     float: left;
     height: 100px;
     }
 
 
 .row {
-    margin: 0px;
+    margin-left: 0px;
     padding-left: 0px;
     width: -1px;
     height: 0px;
@@ -403,33 +405,38 @@ li {
     
     
 table {
-    border: 5px solid black;
+    border: 8px solid red;
     position: relative;
-    margin-left: 360px;
+    margin-left: 387px;
     margin-top: 0px;
     width: 600px;
     text-align: center;
+    background: black;
     }
 
 
-th {   /* Must be the same or equal to td or fail  */
-    border: 5px solid black;
+th {   
+    border: 5px solid blue;
     position: relative;
+    color: #0ef212;
     } 
 
 td {
-    border: 5px solid black;
+    border: 5px solid blue;
     position: relative;
     font-size: 20px;
+    color: #0ef212;
     }
     
     
 #game h1 {
+   margin-left: 27px;
    padding-left: 496px;
    padding-top: 80px;
    padding-bottom: 20px;
    width: 500px;
    font-family: 'Trade Winds';
+   color: #0800ff;
    }
 
     </style>
@@ -529,8 +536,8 @@ td {
 </a>
 </div>
 </div>
-   
-    
+       
+
 </style>
 </head>
 </body>
@@ -546,20 +553,20 @@ td {
 <div id="box2">
     <div class="row">
     <div class="column">
-    <p>Google</p><a href="Ha ha never"><img div id="image3" src="Images/googleplus.jpg" alt="Google Link" style="width:100"></a>
-</div>
+    <p>Google+</p><a href="Ha ha never"><img div id="image3" src="Images/googleplus.jpg" alt="Google Link" style="width:100"></a>
+    </div>
     
 <div class="column">
     <p>Youtube</p><a href="https://www.youtube.com/channel/UCW9DhxLWa6knAcEsZq-2vkw"><img div id="image4" src="Images/youtube.png" alt="Youtube Link" style="width:100"></a>
-</div>
+    </div>
     
 <div class="column">
     <p>Twitter</p><a href="https://twitter.com/brand175"><img div id="image5" src="Images/twitter.png" alt="Twitter Link" style="width:100"></a>
-</div>
+    </div>
     
-    </div>
-    </div>
-    </div>
+</div>
+</div>
+</div>
 
 </body>
 </html>
