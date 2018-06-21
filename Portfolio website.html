@@ -2,7 +2,7 @@
 
 <html>
 <head>
-<title>Brandon's Portfolio</title>
+<title>Brandon’s Portfolio</title>
 <link href='https://fonts.googleapis.com/css?family=Luckiest Guy' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Bowlby One SC' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Trade Winds' rel='stylesheet'>
@@ -36,7 +36,7 @@ body {
 #website-header h1 {
     width: 800px;
     margin: 0px;
-    padding: 15px 0px 0px 180px;
+    padding: 15px 0px 0px 15%;
     }
  
 
@@ -95,20 +95,28 @@ body {
     font-size: 50px;
     font-family: impact;
     }
-   
-
-.image {             /* brand175's Avatar */
-    display: block;
-    position: relative;
-    border-radius: 600px;
-    border: 15px solid #4286f4;
-    border-width: 10px;
-    width: 125px;
-    height: 125px;
-    }
+  
+  
+#image1 {  
+     margin-top: 65px;
+     margin-left: 20px;
+     }
+     
+        
+#image1 img {  
+     margin: 0px;
+     }
 
 
 #image2 {            /* Github Avatar for brand175 */
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    }
+    
+
+#image2 img {        /* Github Avatar for brand175 */
     margin: 0px;
     border-radius: 10px;
     height: 100px;
@@ -118,7 +126,44 @@ body {
     
 
 #image3 {            /* Google Plus photo */
-    margin-left: 89px;
+    margin-left: 70px;
+    border-radius: 600px;
+    height: 40px;
+    width: 70px;
+    position: relative;
+    }
+  
+
+#image3 img {        /* Google Plus photo */
+    margin-left: 0px;
+    border-radius: 600px;
+    height: 40px;
+    width: 70px;
+    position: relative;
+    } 
+    
+    
+#image3 p {        
+    right: 88px;
+    border-radius: 600px;
+    height: 40px;
+    width: 70px;
+    position: relative;
+    }  
+    
+    
+#image4 {            /* Youtube photo */
+    margin-left: 350px;
+    margin-top: -61px;
+    border-radius: 600px;
+    height: 89px;
+    width: 70px;
+    position: relative;
+    }
+    
+    
+#image4 img {        /* Youtube photo */
+    margin-left: 0px;
     border-radius: 600px;
     height: 40px;
     width: 70px;
@@ -126,8 +171,8 @@ body {
     }
     
     
-#image4 {            /* Youtube photo */
-    margin-left: 89px;
+#image4 p {          
+    right: 90px;
     border-radius: 600px;
     height: 40px;
     width: 70px;
@@ -136,7 +181,25 @@ body {
 
 
 #image5 {            /* Twitter photo */
-    margin-left: 89px;
+    margin-left: 70px;
+    border-radius: 600px;
+    height: 40px;
+    width: 70px;
+    position: relative;
+    }
+    
+
+#image5 img {        /* Twitter photo */
+    margin-left: 0px;
+    border-radius: 600px;
+    height: 40px;
+    width: 70px;
+    position: relative;
+    }
+    
+    
+#image5 p {          
+    right: 90px;
     border-radius: 600px;
     height: 40px;
     width: 70px;
@@ -169,7 +232,7 @@ body {
     }
     
     
-.image8 {             /* James Bond photo */
+.image8 {            /* James Bond photo */
     margin: 90px;
     width: 300px;
     height: 450px;
@@ -179,7 +242,7 @@ body {
     }
 
 
-.overlay {            /* Overlay for brand175's Avatar */
+.overlay {           /* Overlay for brand175's Avatar */
     margin: 0px;
     border-radius: 600px;
     position: relative;
@@ -286,16 +349,16 @@ video:hover {
     }
 
 
-.text {
-    width: 500px;
+.text {               /* 100% problem for the overlay thing. Must a find way to move github image with font without moving overlay */
+    width: 300px;
     margin: 0px;
     color: white;
     font-size: 20px;
     position: relative;
     bottom: 0px;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
+    top: 150%;
+    left: 150%;
+    -webkit-transform: translate(-50%, -50%);       /* This also moves github thing left and right. Possible fix? */
     text-align: center;
     font-family: fantasy;
     }
@@ -438,14 +501,15 @@ td {
    color: #0800ff;
    }
 
-    </style>
-    </head>
+</style>
+</head>
+
 
 <body background="Images/space2.jpg">
 
 
 <div id="website-header">
-    <h1>Welcome to my Portfolio</h1>
+     <h1>Welcome to my Portfolio</h1>
 </div>
 
    
@@ -459,16 +523,16 @@ td {
 
 <div id="about">
     <p>About Me</p>
-</div>
+    </div>
     
 
 <div id="info">
     <p>My name is Brandon. I've been inspired by one of William L Cobb's work. Since he hasn't been active on updating the project in a very long time. I decided to fix it up myself and I managed to fix some minor stuff to make it more playable. During my free time I like to work on GC4iOS and play it on my devices</p>
-</div>
+    </div>
 
 <div id="game">
-<h1>My Favourite Games</h1>
-</div>
+    <h1>My Favourite Games</h1>
+    </div>
 
 <table>    
 <tr>
@@ -506,36 +570,37 @@ td {
 <td>Medal of Honor: Frontline</td>
 <td>Good music. Can be hard if difficulty is maxed</td>
 </tr>
-
 </table>
 
 
 <div id="box1">
-    <img src="Images/brand175.jpg" alt="brand175's Avatar" class="image" algin="basline"><p>Check out Will Cobb's projects</p>
-</div>
+    <div id="image1">
+        <img src="Images/brand175.jpg" alt="brand175's Avatar" algin="basline"><p>Check out Will Cobb's projects</p>
+        </div>
 </div>
 
-<img src="Images/james bond.jpg" alt="Pierce Brosnan" class="image8">
+    <img src="Images/james bond.jpg" alt="Pierce Brosnan" class="image8">
 </div>
 
 <div class="overlay3">
     <video controls autoplay loop muted>
-<source src="Images/Corruptions Preview Trailer.mp4" type="video/mp4">
+    <source src="Images/Corruptions Preview Trailer.mp4" type="video/mp4">
     </video>
-</div>     
+    </div>     
     
 <div class="overlay">
-    <div class="text">My Github Page<a href="https://github.com/brand175"><br></br><img div id="image2" src="Images/brand175.jpg" alt="brand175's Avatar"/a>
-</div>
+    <div id="image2">
+    <div class="text">My Github Page<a href="https://github.com/brand175"><br></br><img src="Images/brand175.jpg" alt="brand175's Avatar"/a>
+    </div>
     </div>
     </div>
 
 <div class="overlay4">
-<a href="https://github.com/WilliamLCobb">
+    <a href="https://github.com/WilliamLCobb">
     <img src="Images/will_cobb.jpg" alt="William L.Cobb's Avatar" div id="image7">
-</a>
-</div>
-</div>
+    </a>
+    </div>
+    </div>
        
 
 </style>
@@ -547,26 +612,28 @@ td {
 
 <div id="contacts">
     <p>Contacts</p>
-</div>
+    </div>
 
 
 <div id="box2">
     <div class="row">
     <div class="column">
-    <p>Google+</p><a href="Ha ha never"><img div id="image3" src="Images/googleplus.jpg" alt="Google Link" style="width:100"></a>
-    </div>
+    <div id="image3">
+        <p>Google+</p><a href=“Ha ha never“><img src="Images/googleplus.jpg" alt="Google Link"></a>
+        </div>
     
 <div class="column">
-    <p>Youtube</p><a href="https://www.youtube.com/channel/UCW9DhxLWa6knAcEsZq-2vkw"><img div id="image4" src="Images/youtube.png" alt="Youtube Link" style="width:100"></a>
-    </div>
+    <div id="image4">
+        <p>Youtube</p><a href="https://www.youtube.com/channel/UCW9DhxLWa6knAcEsZq-2vkw"><img src="Images/youtube.png" alt="Youtube Link"></a>
+        </div>
     
 <div class="column">
-    <p>Twitter</p><a href="https://twitter.com/brand175"><img div id="image5" src="Images/twitter.png" alt="Twitter Link" style="width:100"></a>
+    <div id="image5">
+        <p>Twitter</p><a href="https://twitter.com/brand175"><img src="Images/twitter.png" alt="Twitter Link"></a>
+        </div> 
     </div>
-    
-</div>
-</div>
-</div>
+    </div>
+    </div>
 
 </body>
 </html>
